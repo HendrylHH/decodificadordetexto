@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F3F5FC;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header {
+
+box-sizing: border-box;
+
+position: center;
+width: 230px;
+height: 100px;
+left: 100px;
+top: 100px;
+
+border: 1px dashed #7B61FF;
+border-radius: 5px;
+
+}
+
+main {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+}
+
+.left, .right {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left {
+    border-right: 1px solid #ccc;
+}
+
+
+.input-container {
+    position: relative;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.presentation-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 40%;
+    height: auto;
+}
+
+.buttons {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004085;
+}
+
+button:focus {
+    outline: none;
+}
+
+button#encryptBtn {
+    margin-right: 10px;
+}
+
+button#decryptBtn {
+    margin-left: 10px;
+}
+
+.validation-msg {
+    color: red;
+    text-align: center;
+}
+
+.output {
+    white-space: pre-wrap;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-height: 200px;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
